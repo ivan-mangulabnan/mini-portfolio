@@ -29,5 +29,9 @@ module.exports = {
         type: "asset/resource",
       }
     ]
+  },
+  devtool: "eval-source-map",
+  devServer: {
+    watchFiles: ["./src/index.html"],
   }
 }
