@@ -1,9 +1,9 @@
 :root {
   --banner-bg: url('./assets/images/html-1900.jpg');
-  --banner-bg-pos: 0% 23%;
-  --bg-height: 20rem;
-  --bg-overlay-color: #777;
-  --bg-opc: .3;
+  --banner-bg-pos: 60% 0;
+  --bg-height: 40rem;
+  --bg-overlay-color: #222;
+  --bg-opc: .2;
 }
 
 .banner {
@@ -13,6 +13,8 @@
   background-size: cover;
   isolation: isolate;
   position: relative;
+  color: #fff;
+  font-family: var(--font-logo);
 }
 
 .banner::before {
@@ -21,4 +23,11 @@
   inset: 0;
   background-color: var(--bg-overlay-color);
   opacity: var(--bg-opc);
+}
+
+.logo-text {
+  position: relative;
+  display: block;
+  font-size: clamp(3rem, calc(3rem + .5vw), 3.5rem);
+  font-weight: 800;
 }
