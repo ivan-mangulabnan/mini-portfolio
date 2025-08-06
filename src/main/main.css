@@ -1,0 +1,5 @@
+@import './display-pic.css';
+
+.main-content {
+  flex: 1;
+}
