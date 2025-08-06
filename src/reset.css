@@ -3,6 +3,11 @@
   box-sizing: border-box;
 }
 
+/* HTML resets the font-sizing to 10px */
+html {
+  font-size: 62.5%;
+}
+
 /* Remove default margins */
 body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
   margin: 0;
