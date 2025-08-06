@@ -1,7 +1,7 @@
 :root {
   --banner-bg: url('../assets/images/html-1900.jpg');
   --banner-bg-pos: 60% 0;
-  --bg-height: 40rem;
+  --bg-height: 30rem;
   --bg-overlay-color: #222;
   --bg-opc: .2;
 }
