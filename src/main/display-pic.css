@@ -1,0 +1,63 @@
+.display-pic {
+  position: relative;
+}
+
+.pic-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: inherit;
+}
+
+.pic-wrapper {
+  height: 15rem;
+  width: 15rem;
+
+  translate: calc(50vw - 50%) -50%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.pic-wrapper::before {
+  content: '';
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  height: 17rem;
+  width: 17rem;
+  border-top: .5rem solid #aaa;
+  border-left: .5rem solid transparent;
+  border-right: .5rem solid transparent;
+  border-bottom: .5rem solid #aaa;
+  border-radius: 50%;
+  rotate: -45deg;
+}
+
+.pic-wrapper::after {
+  content: '';
+  position: absolute;
+  top: -2rem;
+  left: -2rem;
+  height: 19rem;
+  width: 19rem;
+  border-top: .5rem solid rgba(74, 61, 63, 0.8);
+  border-left: .5rem solid transparent;
+  border-right: .5rem solid transparent;
+  border-bottom: .5rem solid rgb(74, 61, 63, 0.8);
+  border-radius: 50%;
+  rotate: 45deg;
+}
+
+.pic.rotate::before {
+  animation: rotation 1s 1 ease-out;
+}
+
+.pic.rotate::after {
+  animation: rotation 1s ease-in-out 1 reverse;
+}
+
+@keyframes rotation {
+  100% {
+    transform: rotate(360deg);
+  }
+}
