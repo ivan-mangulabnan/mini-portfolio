@@ -48,11 +48,11 @@
   rotate: 45deg;
 }
 
-.pic.rotate::before {
+.pic-wrapper.rotate::before {
   animation: rotation 1s 1 ease-out;
 }
 
-.pic.rotate::after {
+.pic-wrapper.rotate::after {
   animation: rotation 1s ease-in-out 1 reverse;
 }
 
