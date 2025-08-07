@@ -18,7 +18,6 @@
 
   translate: calc(50vw - 50%) -50%;
   border-radius: 50%;
-  isolation: isolate;
 }
 
 .pic-wrapper::before {
