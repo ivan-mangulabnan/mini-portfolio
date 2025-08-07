@@ -1,5 +1,6 @@
 .display-pic {
   position: absolute;
+  z-index: 1;
   top: 0;
   left: 0;
 }
@@ -17,7 +18,7 @@
 
   translate: calc(50vw - 50%) -50%;
   border-radius: 50%;
-  position: absolute;
+  isolation: isolate;
 }
 
 .pic-wrapper::before {
@@ -32,7 +33,7 @@
   border-right: .5rem solid transparent;
   border-bottom: .5rem solid #aaa;
   border-radius: 50%;
-  rotate: -45deg;
+  transform: rotate(45deg);
 }
 
 .pic-wrapper::after {
@@ -47,19 +48,19 @@
   border-right: .5rem solid transparent;
   border-bottom: .5rem solid rgb(74, 61, 63, 0.8);
   border-radius: 50%;
-  rotate: 45deg;
+  transform: rotate(-45deg);
 }
 
 .pic-wrapper.rotate::before {
-  animation: rotation 1s 1 ease-out;
+  animation: rotation 1s 2 ease-in-out alternate;
 }
 
 .pic-wrapper.rotate::after {
-  animation: rotation 1s ease-in-out 1 reverse;
+  animation: rotation 1s 2 ease-in-out alternate-reverse;
 }
 
 @keyframes rotation {
   100% {
-    transform: rotate(360deg);
+    transform: rotate(315deg);
   }
 }
