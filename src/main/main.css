@@ -5,3 +5,16 @@
   padding: 2rem;
   position: relative;
 }
+
+header {
+  font-family: var(--font-headings);
+}
+
+h1 {
+  font-size: clamp(4rem, calc(4rem + .1vw), 5rem);
+  line-height: clamp(4rem, calc(11rem - 12vw), 11rem);
+}
+
+h1 span {
+  display: block;
+}
