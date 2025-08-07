@@ -21,6 +21,19 @@ body {
 main {
   flex: 1;
   color: var(--font-main-color);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+section {
+  padding: 1rem 2rem;
+}
+
+section span {
+  display: block;
 }
 
 .heading {
@@ -32,18 +45,34 @@ main {
   font-size: 2.4rem;
   font-weight: 800;
   opacity: 0;
-  z-index: 0;
+}
+
+.grad-cap {
+  width: clamp(4rem, calc(4rem + 1vw), 5rem);
 }
 
 h2 {
   font-family: var(--font-general);
   font-weight: 800;
-  font-size: 1.8rem;
-  margin-right: 1rem;
+  font-size: clamp(1.8rem, calc(1.8rem + .7vw), 2rem);
+  margin: 0 1rem;
 }
 
 .tilt {
   animation: tilt 1.3s 1 ease-out;
+}
+
+.content {
+  padding: 0 2rem;
+  font-size: clamp(1.4rem, calc(1.4rem + .6vw), 1.6rem);
+}
+
+.content .degree {
+  font-weight: 600;
+}
+
+.content .univ {
+  font-size: 1.4rem;
 }
 
 @keyframes tilt {
