@@ -30,4 +30,5 @@
   display: block;
   font-size: clamp(3rem, calc(3rem + .5vw), 3.5rem);
   font-weight: 800;
+  padding-left: 2rem;
 }
