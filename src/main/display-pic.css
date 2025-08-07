@@ -1,5 +1,7 @@
 .display-pic {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .pic-wrapper img {
