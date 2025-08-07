@@ -1,27 +1,8 @@
 @import './display-pic.css';
+@import './header.css';
 
 .main-content {
   flex: 1;
   padding: 2rem;
   position: relative;
-}
-
-header {
-  font-family: var(--font-headings);
-}
-
-header .occupation {
-  font-family: var(--font-general);
-  font-weight: 800;
-  font-size: 1.3rem;
-  letter-spacing: .2rem;
-}
-
-h1 {
-  font-size: clamp(4rem, calc(4rem + .1vw), 5rem);
-  line-height: clamp(4rem, calc(11rem - 12vw), 11rem);
-}
-
-h1 span {
-  display: block;
 }
