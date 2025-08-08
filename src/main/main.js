@@ -1,13 +1,24 @@
 import './display-pic.js';
-import { addAnimation } from '../utils/animation-utils.js';
 
-// tilt and fade animation
-(function () {
-  const heading = document.querySelector('.educ');
-  const svg = heading.querySelector('.grad-cap');
-  const anchor = heading.querySelector('.anchor');
-  const tiltAnimation = 'tilt';
-  const fadeAnimation = 'fade';
-  addAnimation(heading, tiltAnimation, svg);
-  addAnimation(heading, fadeAnimation, anchor);
-})();
+const showBtns = document.querySelectorAll('.show-btn');
+showBtns.forEach(btn => {
+  btn.addEventListener('click', (event) => {
+    changeArrowDisplay(event);
+    showContent(event);
+  })
+})
+
+function changeArrowDisplay (event) {;
+  const targetBtn = event.currentTarget;
+  const path = targetBtn.querySelector('path');
+  const arrow =  targetBtn.classList.contains('close') ? 'm4.5 15.75 7.5-7.5 7.5 7.5' : 'm19.5 8.25-7.5 7.5-7.5-7.5';
+  targetBtn.classList.toggle('close');
+  path.setAttribute('d', arrow);
+}
+
+function showContent (event) {
+  const section = event.currentTarget.closest('section');
+  const content = section.querySelector('ul');
+  content.classList.toggle('show-content');
+  content.classList.toggle('hid-content');
+}

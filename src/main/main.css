@@ -2,7 +2,8 @@
 @import './header.css';
 
 :root {
-  --font-main-color: #222;
+  --font-main-color: #333;
+  --font-dynamic-list-header: clamp(1.4rem, calc(1rem + 1.6vw), 1.8rem);
 }
 
 body {
@@ -29,50 +30,91 @@ main {
 }
 
 section {
-  padding: 1rem 2rem;
-}
-
-section span {
-  display: block;
+  width: 100%;
+  isolation: isolate;
 }
 
 .heading {
+  min-height: 6rem;
+  max-width: 50rem;
   display: flex;
   align-items: center;
-}
-
-.anchor {
-  font-size: 2.4rem;
-  font-weight: 800;
-  opacity: 0;
-}
-
-.grad-cap {
-  width: clamp(4rem, calc(4rem + 1vw), 5rem);
-}
-
-h2 {
-  font-family: var(--font-general);
-  font-weight: 800;
-  font-size: clamp(1.8rem, calc(1.8rem + .7vw), 2rem);
-  margin: 0 1rem;
-}
-
-.tilt {
-  animation: tilt 1.3s 1 ease-out;
+  background-color: #efefff;
+  border-radius: 1rem;
+  position: relative;
+  z-index: 1;
 }
 
 .content {
-  padding: 0 2rem;
-  font-size: clamp(1.4rem, calc(1.4rem + .6vw), 1.6rem);
+  padding: 1rem 0 1rem 1rem;
+  background-color: #f9f9f9;
+  display: none;
 }
 
-.content .degree {
-  font-weight: 600;
+.content span {
+  display: block;
 }
 
-.content .univ {
-  font-size: 1.4rem;
+/* educ section starts */
+
+.degree {
+  font-size: var(--font-dynamic-list-header);
+  font-weight: 700;
+}
+
+.univ {
+  font-size: 1.35rem;
+}
+
+/* --- */
+
+h2 {
+  font-size: clamp(2.2rem, calc(2.2rem + .5vw), 3.2rem);
+  font-weight: 800;
+  letter-spacing: -.080rem;
+  isolation: isolate;
+}
+
+h2 span {
+  margin-left: clamp(1rem, calc(1rem + .3vw), 2rem);
+}
+
+.show-btn {
+  margin-left: clamp(2rem, calc(1.5rem + 1vw), 3rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 5rem;
+  min-height: 5rem;
+  border-radius: 1rem;
+}
+
+.show-btn:active {
+  background-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  outline: 2px solid #ddd;
+}
+
+.icon-svg {
+  width: clamp(4rem, calc(3rem + 4vw), 5rem);
+}
+
+.arrow {
+  width: 3rem;
+  stroke-width: 2;
+  stroke: #000;
+  fill: none;
+}
+
+.grad-cap {
+  fill: #fff;
+  stroke: #212121;
+}
+
+/* animations below */
+
+.tilt {
+  animation: tilt 1.3s 1 ease-out;
 }
 
 @keyframes tilt {
@@ -94,5 +136,31 @@ h2 {
 @keyframes fade {
   100% {
     opacity: 1;
+  }
+}
+
+.show-content {
+  display: block;
+  animation: pop-down .3s ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes pop-down {
+  0% {
+    transform: translateY(-90%);
+  }
+}
+
+.hid-content {
+  display: block;
+  animation: pop-up .3s ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes pop-up {
+  100% {
+    transform-origin: top;
+    transform: translateY(-90%) scaleY(0);
+    display: none;
   }
 }
