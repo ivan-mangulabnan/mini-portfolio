@@ -2,8 +2,9 @@
 @import './header.css';
 
 :root {
-  --font-main-color: #333;
-  --font-dynamic-list-header: clamp(1.4rem, calc(1rem + 1.6vw), 1.8rem);
+  --font-main-color: #222;
+  --font-dynamic-list-header: clamp(1.4rem, calc(1rem + 1.4vw), 1.7rem);
+  --font-dynamic-h2: clamp(1.5rem, calc(1rem + 1.6vw), 1.8rem)
 }
 
 body {
@@ -31,6 +32,7 @@ main {
 
 section {
   width: 100%;
+  max-width: 50rem;
   isolation: isolate;
 }
 
@@ -39,23 +41,21 @@ section {
   max-width: 50rem;
   display: flex;
   align-items: center;
+  gap: 1rem;
   background-color: #efefff;
   border-radius: 1rem;
   position: relative;
   z-index: 1;
+  isolation: isolate;
 }
 
 .content {
-  padding: 1rem 0 1rem 1rem;
+  padding: .5rem;
   background-color: #f9f9f9;
   display: none;
 }
 
-.content span {
-  display: block;
-}
-
-/* educ section starts */
+/* educ section below */
 
 .degree {
   font-size: var(--font-dynamic-list-header);
@@ -63,20 +63,58 @@ section {
 }
 
 .univ {
-  font-size: 1.35rem;
+  font-size: 1.4rem;
+}
+
+/* work-exp section below */
+
+.content li {
+  margin-bottom: 1rem;
+}
+
+.pos {
+  font-size: var(--font-dynamic-list-header);
+}
+
+.company {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.year {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.desc {
+  padding-top: .5rem;
+  padding-left: 1rem;
+}
+
+.desc span {
+  display: block;
+  padding: .5rem 0 .5rem 1rem;
+  font-size: 1.4rem;
+  border-left: .5rem solid #888;
 }
 
 /* --- */
 
 h2 {
-  font-size: clamp(2.2rem, calc(2.2rem + .5vw), 3.2rem);
+  font-size: var(--font-dynamic-h2);
   font-weight: 800;
   letter-spacing: -.080rem;
   isolation: isolate;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
-h2 span {
-  margin-left: clamp(1rem, calc(1rem + .3vw), 2rem);
+.anchor {
+  opacity: 0;
+  font-size: 2.5rem;
 }
 
 .show-btn {
@@ -108,6 +146,11 @@ h2 span {
 
 .grad-cap {
   fill: #fff;
+  stroke: #212121;
+}
+
+.briefcase {
+  fill: #e2ad63;
   stroke: #212121;
 }
 
