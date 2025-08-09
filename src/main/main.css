@@ -34,6 +34,7 @@ section {
   width: 100%;
   max-width: 50rem;
   isolation: isolate;
+  overflow: hidden;
 }
 
 .heading {
@@ -117,6 +118,103 @@ section {
   margin-bottom: 0;
 }
 
+/* projects section */
+
+.projects h3 {
+  font-size: var(--font-dynamic-list-header);
+}
+
+.projects li {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ss-wrapper {
+  width: 100%;
+  max-width: 38rem;
+}
+
+.projects img {
+  width: 100%;
+  max-width: 35rem;
+  box-shadow: var(--header-box-shadow);
+  border-radius: 2rem;
+  margin: 0 auto;
+}
+
+.projects .details {
+  width: 100%;
+}
+
+.projects .description {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.projects .live {
+  font-size: 1.4rem;
+  max-width: 40rem;
+  margin: 0 auto;
+  min-height: 8rem;
+  background-color: #fff;
+  border-radius: .5rem;
+  box-shadow: inset 0 0 10px 2px #aaa;
+  padding: 1rem;
+}
+
+.github-links {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  gap: 2rem;
+}
+
+.github-links span {
+  display: block;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  box-shadow: var(--header-box-shadow);
+}
+
+.notif {
+  width: 100%;
+  max-width: 38rem;
+  margin: 0 auto;
+  box-shadow: var(--header-box-shadow);
+  gap: 1rem;
+  background-color: white;
+  border-radius: .5rem;
+  margin-top: 1rem;
+  min-height: 5rem;
+  padding: 1rem;
+}
+
+.side-banner {
+  width: 100%;
+  border-left: .5rem solid #e9a321;
+  display: flex;
+  padding-left: .5rem;
+  gap: 1rem;
+}
+
+.svg-notif {
+  width: 4rem;
+  fill: #e9a321;
+  stroke: #fff;
+  stroke-width: 2;
+}
+
+.note {
+  font-size: 1.4rem;
+}
+
 /* --- */
 
 h2 {
@@ -178,6 +276,11 @@ h2 {
   stroke: #212121;
 }
 
+.gear {
+  fill: silver;
+  stroke: #212121;
+}
+
 /* animations below */
 
 .tilt {
@@ -208,34 +311,30 @@ h2 {
 
 .show-content {
   display: block;
-  animation: pop-down .4s ease-out;
+  animation: pop-down .3s ease-out;
   animation-fill-mode: forwards;
 }
 
 @keyframes pop-down {
   0% {
-    transform: translateY(-40%) scaleY(.4);
+    transform: translateY(-100%);
   }
 
   100% {
-    transform: translateY(0%) scaleY(1);
+    transform: translateY(0%);
     transform-origin: top;
   }
 }
 
 .hid-content {
   display: block;
-  animation: pop-up .4s ease-in;
+  animation: pop-up .3s ease-in;
   animation-fill-mode: forwards;
 }
 
 @keyframes pop-up {
-  90% {
-    opacity: 0;
-  }
-
   100% {
-    transform: translateY(-65%) scaleY(0);
+    transform: translateY(-100%);
     display: none;
   }
 }
