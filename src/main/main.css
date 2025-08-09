@@ -145,10 +145,6 @@ section {
   margin: 0 auto;
 }
 
-.projects .details {
-  width: 100%;
-}
-
 .projects .description {
   text-align: center;
   font-size: 1.3rem;
@@ -213,6 +209,39 @@ section {
 
 .note {
   font-size: 1.4rem;
+}
+
+.projects .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 45rem;
+}
+
+.footnote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  gap: 1rem;
+  min-height: 3rem;
+  font-weight: 600;
+  background-color: #999;
+  padding: .3rem 1rem;
+  color: #fafafa;
+  border-radius: .5rem;
+  border: 2px solid #aaa;
+  box-shadow: .3rem .3rem 1rem .1rem rgb(34, 34, 34, .5);
+}
+
+.github-icon {
+  width: 3rem;
+  fill: #fff;
 }
 
 /* --- */
