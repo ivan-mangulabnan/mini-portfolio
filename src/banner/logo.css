@@ -1,0 +1,50 @@
+.banner .logo {
+  display: flex;
+  isolation: isolate;
+}
+
+.banner .logo-text {
+  font-family: var(--font-logo);
+  font-size: 4rem;
+  font-weight: 800;
+  position: relative;
+  z-index: 1;
+}
+
+.banner .logo-svg {
+  width: 3rem;
+  opacity: 0;
+  transform: translate(-100%);
+}
+
+.hand-pop {
+  animation-name: hand-show, hand-pop, hand-hide;
+  animation-duration: 0.3s, 0.5s, 0.4s;
+  animation-delay: 0s, 0.3s, 0.8s;
+  animation-timing-function: ease-out, ease-out, ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hand-show {
+  100% {
+    opacity: 1;
+    transform: translate(0%);
+  }
+}
+
+@keyframes hand-pop {
+  50% {
+    transform: translateY(-10%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes hand-hide {
+  100% {
+    opacity: 0;
+    transform: translate(-100%);
+  }
+}

@@ -1,0 +1,10 @@
+@import './logo.css';
+
+.banner {
+  min-height: 10rem;
+  backdrop-filter: blur(10px);
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
