@@ -4,32 +4,26 @@
 @import './root.css';
 @import './reset.css';
 @import './banner/banner.css';
+@import './main-content/main-content.css';
 
 body {
   position: relative;
-  isolation: isolate;
-  overflow: hidden;
   color: var(--font-color-body);
 }
 
 .positioned-fixed-bg {
   position: fixed;
-  top: 0%;
-  left: 50%;
+  left: 0;
+  right: 0;
   width: 100%;
-  transform: translateX(-50%);
-  max-width: 160rem;
-  height: 100%;
-  max-height: 100vh;
+  height: 100vh;
   background-image: url('./assets/svg/516e8a-001122-1900.svg');
   background-size: cover;
-  background-position: bottom left;
   z-index: -1;
 }
 
 .main-wrapper {
   position: relative;
-  width: 100%;
   max-width: 160rem;
   z-index: 0;
   margin: 0 auto;
