@@ -1,0 +1,35 @@
+@import './root.css';
+@import './reset.css';
+
+body {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  color: var(--font-color-body);
+}
+
+.positioned-fixed-bg {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  max-height: 100vh;
+  background-image: url('./assets/svg/516e8a-001122-1900.svg');
+  background-size: cover;
+  background-position: bottom left;
+  z-index: -1;
+}
+
+.main-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 160rem;
+  z-index: 0;
+}
+
+@media (max-width: 500px) {
+  .positioned-fixed-bg {
+    background-image: url('./assets/svg/background-mobile.svg');
+  }
+}
