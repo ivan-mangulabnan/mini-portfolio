@@ -1,6 +1,7 @@
 .banner .logo {
   display: flex;
   isolation: isolate;
+  overflow: hidden;
 }
 
 .banner .logo-text {

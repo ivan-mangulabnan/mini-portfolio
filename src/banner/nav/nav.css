@@ -1,0 +1,27 @@
+nav {
+  min-height: 100%;
+}
+
+nav .anchors {
+  display: flex;
+  font-size: 1.8rem;
+  gap: 5rem;
+  font-family: var(--font-general);
+  font-weight: 600;
+}
+
+.anchors a {
+  display: block;
+  opacity: .8;
+  padding: .5rem 1rem;
+}
+
+.anchors a:hover {
+  opacity: 1;
+}
+
+.anchors a:focus {
+  outline: 3px solid #fff;
+  border-radius: 5px;
+  opacity: 1;
+}
