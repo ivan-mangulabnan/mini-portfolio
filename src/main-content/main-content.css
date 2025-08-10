@@ -1,0 +1,7 @@
+@import './home/home.css';
+
+main {
+  width: 100%;
+  max-width: 140rem;
+  margin: 0 auto;
+}

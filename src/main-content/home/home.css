@@ -1,0 +1,65 @@
+.home {
+  width: 100%;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+}
+
+.owner-img {
+  max-width: 50rem;
+  position: relative;
+  isolation: isolate;
+}
+
+.owner-img img {
+  width: 100%;
+  display: block;
+}
+
+.ivan {
+  position: absolute;
+  max-width: 40rem;
+  z-index: 0;
+  filter: brightness(.8) contrast(1.2);
+}
+
+.slash {
+  transform: translate(-20%, 26%) rotate(87deg);
+  position: relative;
+  z-index: 1;
+  filter: brightness(1) contrast(.8);
+}
+
+.greeting {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 4rem;
+}
+
+.greeting h1 {
+  font-family: var(--font-headings);
+  font-size: 8rem;
+  line-height: 110%;
+}
+
+.greeting .pos {
+  font-family: var(--font-general);
+  letter-spacing: .5rem;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.desc {
+  border: 3px solid #fff;
+  max-width: 70rem;
+  border-radius: 2rem;
+  padding: 2rem 3rem;
+}
+
+.desc p {
+  font-family: var(--font-general);
+  font-size: 1.5rem;
+}
