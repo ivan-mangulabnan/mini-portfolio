@@ -1,10 +1,10 @@
 .banner .logo {
   display: flex;
   isolation: isolate;
-  overflow: hidden;
 }
 
 .banner .logo-text {
+  text-shadow: 5px 2px 5px rgb(51, 51, 51);
   font-family: var(--font-logo);
   font-size: 4rem;
   font-weight: 800;
@@ -29,7 +29,7 @@
 @keyframes hand-show {
   100% {
     opacity: 1;
-    transform: translate(0%);
+    transform: translate(10%);
   }
 }
 
