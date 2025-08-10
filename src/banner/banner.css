@@ -1,4 +1,5 @@
-@import './logo.css';
+@import './logo/logo.css';
+@import './nav/nav.css';
 
 .banner {
   min-height: 10rem;
