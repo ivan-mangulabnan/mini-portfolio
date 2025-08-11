@@ -1,5 +1,13 @@
 @import './home/home.css';
 @import './educ/educ.css';
+@import './experience/work-exp.css';
+
+#educ,
+#work,
+#skills,
+#projects {
+  scroll-margin-top: 40vh;
+}
 
 main {
   width: 100%;
@@ -12,4 +20,32 @@ main {
   margin-top: 20rem;
   width: 100%;
   padding: 0 5rem;
+  
+  display: grid;
+  grid-template-rows: repeat(4, minmax(25rem, auto));
+  grid-auto-rows: 30rem;
+}
+
+.sections h2 {
+  text-shadow: 5px 5px 5px rgb(0 0 0 / .5);
+  font-size: 3rem;
+  font-family: var(--font-general);
+  font-weight: 900;
+  position: relative;
+}
+
+.sections section p {
+  font-family: var(--font-general);
+  font-size: 1.6rem;
+}
+
+.anchor {
+  opacity: 0;
+}
+
+.icon-svg {
+  position: absolute;
+  width: 100%;
+  max-width: 4.3rem;
+  filter: drop-shadow(5px 2px 2px rgb(0 0 0 / .5));
 }
