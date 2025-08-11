@@ -1,0 +1,58 @@
+.work {
+  align-self: center;
+  justify-self: center;
+
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+}
+
+.work h2 {
+  align-self: center;
+}
+
+.work .content {
+  max-width: 50rem;
+  /* border-left: 5px solid rgb(191, 255, 0, .7); */
+  padding: 2rem 0 2rem 3rem;
+}
+
+.work h3 {
+  font-family: var(--font-general);
+  font-size: 2rem;
+}
+
+.work .position {
+  color: rgb(191, 255, 0, 1);
+}
+
+.work li:not(:first-of-type) {
+  margin-top: 1rem;
+}
+
+.work .company {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.work .desc-wrapper {
+  margin-top: 1rem;
+  padding-left: 2rem;
+}
+
+.work .description {
+  padding: .5rem 0 .5rem 1rem;
+  border-left: 5px solid  #00112280;
+}
+
+.work .year {
+  color: #fff;
+}
+
+.bag {
+  left: -14%;
+  top: -2%;
+  fill: rgb(196, 152, 86);
+  stroke: rgb(0 0 0 / .7);
+  stroke-width: 1.3;
+}
