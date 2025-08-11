@@ -4,7 +4,8 @@
 }
 
 .banner .logo-text {
-  text-shadow: 5px 2px 5px rgb(51, 51, 51);
+  text-shadow: 5px 5px 5px rgb(0 0 0 / .5);
+  color: #efeeff;
   font-family: var(--font-logo);
   font-size: 4rem;
   font-weight: 800;
@@ -16,6 +17,7 @@
   width: 3rem;
   opacity: 0;
   transform: translate(-100%);
+  filter: drop-shadow(5px 3px 3px rgb(0 0 0 / 1));
 }
 
 .hand-pop {
