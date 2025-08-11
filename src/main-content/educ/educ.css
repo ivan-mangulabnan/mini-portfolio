@@ -1,0 +1,67 @@
+.sections {
+  display: grid;
+  grid-template-rows: repeat(4, minmax(30rem, auto));
+  grid-auto-rows: 30rem;
+}
+
+.sections section h2 {
+  text-shadow: 5px 5px 5px rgb(0 0 0 / .5);
+  font-size: 3rem;
+  font-family: var(--font-general);
+  font-weight: 900;
+  position: relative;
+}
+
+.sections section p {
+  font-family: var(--font-general);
+  font-size: 1.6rem;
+}
+
+.educ {
+  justify-self: center;
+  align-self: top;
+
+  text-align: center;
+}
+
+.educ header {
+  margin-bottom: 2rem;
+}
+
+.educ .degree {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.sections header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cap {
+  position: absolute;
+  top: -4%;
+  left: -22%;
+  width: 100%;
+  max-width: 4.3rem;
+  fill: #222;
+  filter: drop-shadow(5px 5px 3px rgb(0 0 0 / .5));
+}
+
+.univ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+}
+
+.pup-logo {
+  width: 2.5rem;
+}
+
+.font-color-green {
+  color: rgb(191, 255, 0, 1);
+}
