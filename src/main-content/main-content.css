@@ -1,8 +1,15 @@
 @import './home/home.css';
+@import './educ/educ.css';
 
 main {
   width: 100%;
   padding: 0 5rem;
   max-width: 160rem;
   margin: 0 auto;
+}
+
+.sections {
+  margin-top: 20rem;
+  width: 100%;
+  padding: 0 5rem;
 }
