@@ -4,7 +4,10 @@
 
 .intro {
   display: flex;
-  justify-content: space-between;
+}
+
+.head {
+  margin-left: 5rem;
 }
 
 .owner-img {
@@ -25,6 +28,10 @@
   filter: brightness(.8) contrast(1.2) drop-shadow(12px 20px 5px rgb(0, 0, 0, .3));
 }
 
+.head .full-stack {
+  color: rgb(191, 255, 0, .9);
+}
+
 .slash {
   transform: translate(-20%, 26%) rotate(87deg);
   position: relative;
@@ -33,6 +40,7 @@
 }
 
 .greeting {
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -54,12 +62,13 @@
 }
 
 .desc {
+  margin-top: 3.5rem;
   max-width: 60rem;
 }
 
 .desc p {
   font-family: var(--font-general);
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 /* icons-svg */
@@ -78,7 +87,7 @@
 }
 
 .icon {
-  max-width: 3.5rem;
+  width: 100%;
   fill: #fff;
   fill-opacity: .8;
   filter: drop-shadow(5px 5px 5px rgb(0, 0, 0, 0.9));
@@ -101,16 +110,28 @@
 }
 
 .contact button:focus {
-  outline: none;
+  outline: 2px solid #fff;
+}
+
+.contact button:focus,
+.contact button:hover {
+  color: rgb(0 0 0 / .8);
+  background-color: rgb(191, 255, 0, 0.8);
+}
+
+.contact button:active {
+  transform: scale(1.05);
+  background-color: rgb(191, 255, 0, 1);
+  color: rgb(0 0 0 / 1);
 }
 
 .contact button {
   font-size: 2rem;
   font-family: var(--font-general);
   font-weight: 900;
-  color: #222;
+  color: rgb(0 0 0 / .7);
   padding: .5rem 1rem;
-  border-radius: 1rem;
-  background-color: rgb(191, 255, 0, 0.8);
-  border: 3px solid #001122;
+  border-radius: .5rem;
+  background-color: rgb(191, 255, 0, 0.7);
+  box-shadow: 5px 5px 5px rgb(0 0 0 / .3);
 }

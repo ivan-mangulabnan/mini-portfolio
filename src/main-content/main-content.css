@@ -2,6 +2,7 @@
 
 main {
   width: 100%;
-  max-width: 140rem;
+  padding: 0 5rem;
+  max-width: 160rem;
   margin: 0 auto;
 }
