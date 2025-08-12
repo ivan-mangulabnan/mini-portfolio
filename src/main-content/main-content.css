@@ -6,10 +6,13 @@
 
 #educ,
 #work,
-#skills,
-#projects {
+#skills{
   scroll-margin-top: 40vh;
 }
+
+#projects {
+  scroll-margin-top: 20vh;
+} 
 
 main h2,
 main h3,
@@ -56,4 +59,36 @@ main {
   position: absolute;
   width: 100%;
   max-width: 3.5rem;
+}
+
+.show-anchor {
+  animation: show 1s ease-out;
+}
+
+@keyframes show {
+  40% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.move-cap {
+  animation: full-sequence linear 1.6s alternate 2;
+}
+
+@keyframes full-sequence {
+  30% {
+    transform: translate(20%, -50%); 
+  }
+  60% {
+    transform-origin: center;
+    transform: translateY(-50%) rotate(-30deg);
+  }
+  60%,
+  100% {
+    transform: translate(50%, -30%) rotate(-30deg); 
+  }
 }
