@@ -1,12 +1,20 @@
 @import './home/home.css';
 @import './educ/educ.css';
 @import './experience/work-exp.css';
+@import './skills/skills.css';
 
 #educ,
 #work,
 #skills,
 #projects {
   scroll-margin-top: 40vh;
+}
+
+main h2,
+main h3,
+main p,
+main span {
+  cursor: default;
 }
 
 main {
