@@ -5,7 +5,7 @@ nav {
 nav .anchors {
   display: flex;
   font-size: 1.8rem;
-  gap: 5rem;
+  gap: 2rem;
   font-family: var(--font-general);
   font-weight: 600;
 }

@@ -112,23 +112,25 @@
   margin-top: 3rem;
 }
 
-.contact button:focus {
+.contact a:focus {
   outline: 2px solid #fff;
 }
 
-.contact button:focus,
-.contact button:hover {
+.contact a:focus,
+.contact a:hover {
   color: rgb(0 0 0 / .8);
   background-color: rgb(191, 255, 0, 0.8);
 }
 
-.contact button:active {
+.contact a:active {
   transform: scale(1.05);
   background-color: rgb(191, 255, 0, 1);
   color: rgb(0 0 0 / 1);
 }
 
-.contact button {
+.contact a {
+  display: block;
+  width: fit-content;
   font-size: 2rem;
   font-family: var(--font-general);
   font-weight: 900;
