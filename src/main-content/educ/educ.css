@@ -23,12 +23,10 @@
 }
 
 .cap {
-  position: absolute;
-  top: -4%;
-  left: -22%;
-  width: 100%;
-  max-width: 4.3rem;
+  top: 10%;
+  left: -18%;
   fill: #222;
+  stroke-width: 1;
 }
 
 .univ {

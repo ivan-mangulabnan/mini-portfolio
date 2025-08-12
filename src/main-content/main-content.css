@@ -2,6 +2,7 @@
 @import './educ/educ.css';
 @import './experience/work-exp.css';
 @import './skills/skills.css';
+@import './projects/projects.css';
 
 #educ,
 #work,
@@ -54,6 +55,5 @@ main {
 .icon-svg {
   position: absolute;
   width: 100%;
-  max-width: 4.3rem;
-  filter: drop-shadow(5px 2px 2px rgb(0 0 0 / .5));
+  max-width: 3.5rem;
 }
