@@ -10,6 +10,10 @@
   margin-left: 5rem;
 }
 
+.owner-mobile {
+  display: none;
+}
+
 .owner-img {
   max-width: 50rem;
   position: relative;

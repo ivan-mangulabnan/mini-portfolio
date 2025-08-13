@@ -118,3 +118,29 @@ function onAnchorEnd (ele, className, state) {
   ele.classList.remove(className);
   state.anchorStillAnimating = false;
 }
+
+// on mobile displayed pic only.
+
+
+const mobileImg = document.querySelector('.owner-mobile img');
+
+let animationRunning = false;
+mobileImg.addEventListener('click', () => {
+  if (animationRunning) return;
+  const small = document.querySelector('.small-circ');
+  const big = document.querySelector('.big-circ');
+
+  small.classList.add('rotate-forward');
+  big.classList.add('rotate-backwards');
+  animationRunning = true;
+
+  small.addEventListener('animationend', () => {
+    small.classList.remove('rotate-forward');
+    animationRunning = false;
+  })
+
+  big.addEventListener('animationend', () => {
+    big.classList.remove('rotate-backwards');
+    animationRunning = false;
+  })
+})

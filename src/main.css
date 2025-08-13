@@ -192,3 +192,122 @@ footer {
     font-size: 2rem;
   }
 }
+
+@media (max-width: 800px) {
+
+  .banner .logo-svg {
+    width: 2.3rem;
+  }
+
+  .intro {
+    display: flex;
+    margin-top: 5rem;
+  }
+
+  .greeting {
+    flex: 1;
+
+    display: flex;
+    gap: 1rem;
+  }
+
+  .owner-img {
+    display: none;
+  }
+
+  .owner-mobile {
+    display: grid;
+    width: 100%;
+    min-height: 25rem;
+    position: relative;
+    isolation: isolate;
+  }
+
+  .owner-mobile img {
+    width: 18rem;
+    height: 18rem;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: brightness(0.8) contrast(1.2);
+    z-index: 1;
+  }
+
+  .small-circ {
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    transform: rotate(40deg);
+    border-top: 5px solid rgb(191, 255, 0, 1);
+    border-bottom: 5px solid rgb(191, 255, 0, 1);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    z-index: 0;
+  }
+
+  .big-circ {
+    width: 22rem;
+    height: 22rem;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    transform: rotate(-30deg);
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    z-index: 0;
+  }
+
+  .rotate-forward {
+    animation: rotate ease-out 1.4s;
+  }
+
+  @keyframes rotate {
+    100% {
+      transform: rotate(400deg);
+    }
+  }
+
+  .rotate-backwards {
+    animation: rotate-rev ease-out 1.4s;
+  }
+
+  @keyframes rotate-rev {
+    100% {
+      transform: rotate(-390deg);
+    }
+  }
+
+  .head {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .desc {
+    max-width: 40rem;
+  }
+
+  .desc p {
+    text-align: center;
+  }
+
+  .icons {
+    justify-content: center;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+  }
+}
