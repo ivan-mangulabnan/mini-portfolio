@@ -76,7 +76,7 @@ main {
 }
 
 .move-cap {
-  animation: full-cap-sequence linear 1.6s alternate 2;
+  animation: full-cap-sequence linear 1s alternate 2;
 }
 
 @keyframes full-cap-sequence {
@@ -114,5 +114,25 @@ main {
 @keyframes torpedo {
   100% {
     transform: translateY(-3rem) rotate(360deg);
+  }
+}
+
+.spin {
+  animation: spin ease 2s;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-rev {
+  animation: spin-rev ease 2s 0.0232s;
+}
+
+@keyframes spin-rev {
+  100% {
+    transform: rotate(-360deg);
   }
 }
