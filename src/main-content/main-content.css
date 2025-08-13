@@ -106,3 +106,13 @@ main {
     transform: scale(1.2, 0.8);
   }
 }
+
+.move-tool {
+  animation: torpedo ease .5s alternate 2;
+}
+
+@keyframes torpedo {
+  100% {
+    transform: translateY(-3rem) rotate(360deg);
+  }
+}

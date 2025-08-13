@@ -13,6 +13,12 @@ const workLink = document.querySelector('[href="#work"]');
 const workSvgClassName = 'move-bag';
 animate(workh2, workSvgClassName, workLink);
 
+//skills
+const skillsh2 = document.querySelector('.skills h2');
+const skillsLink = document.querySelector('[href="#skills"]');
+const skillsSvgClassName = 'move-tool';
+animate(skillsh2, skillsSvgClassName, skillsLink);
+
 // utils below}
 
 function animate(header, svgClassName, clickEle = null) {

@@ -8,12 +8,22 @@
   gap: 3rem;
 }
 
+.skills h2 {
+  isolation: isolate;
+}
+
+.skills span {
+  position: relative;
+  z-index: 1;
+}
+
 .tools {
   top: 10%;
   left: -33%;
   fill: silver;
   stroke: #222;
   stroke-width: 2;
+  z-index: 0;
 }
 
 .skills .content {
