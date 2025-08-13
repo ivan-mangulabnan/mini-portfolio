@@ -171,6 +171,23 @@ footer {
     font-size: 1.6rem;
   }
 
+  .work {
+    display: grid;
+    grid-template-columns: none;
+  }
+
+  .work h2 {
+    justify-self: center;
+  }
+
+  .work .content {
+    padding-left: 0;
+  }
+
+  .bag {
+    left: -13%;
+  }
+
   .end .note {
     font-size: 2rem;
   }
