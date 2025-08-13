@@ -39,8 +39,117 @@ footer {
   background-color: #00112280;
 }
 
-@media (max-width: 500px) {
-  .positioned-fixed-bg {
-    background-image: url('./assets/svg/background-mobile.svg');
+@media (max-width: 1100px) {
+
+  .main-wrapper {
+    width: 100%;
+    max-width: 110rem;
+  }
+
+  .banner {
+    width: 100%;
+    padding: 0 5rem;
+    min-height: 5rem;
+  }
+
+  .banner .logo-text {
+    font-size: clamp(3rem, calc(2rem + 1.364vw), 3.5rem);
+  }
+
+  .anchors a {
+    font-size: clamp(1.5rem, calc(1rem + .546vw), 1.6rem);
+  }
+
+  .intro {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    min-height: 50rem;
+  }
+
+  .owner-img {
+    max-width: 40rem;
+    justify-self: end;
+    align-self: center;
+  }
+
+  .owner-img .slash {
+    max-width: 35rem;
+  }
+
+  .owner-img .ivan {
+    max-width: 28rem;
+  }
+
+  .greeting h1 {
+    font-size: clamp(4.2rem, calc(1rem + 4.729vw), 6.2rem);
+  }
+
+  .greeting .pos {
+    letter-spacing: .2rem;
+  }
+
+  .head {
+    margin-bottom: 3rem;
+  }
+
+  .desc {
+    margin-top: 2rem;
+  }
+
+  .desc p {
+    font-size: 1.4rem;
+  }
+
+  .icons a {
+    max-width: 2.8rem;
+  }
+
+  .contact {
+    margin-top: 2rem;
+  }
+
+  .contact a {
+    font-size: 1.6rem;
+  }
+
+  .projects li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .ss-container .ss {
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+
+  .details h3 {
+    display: none;
+  }
+
+  .hidden-header {
+    display: block;
+  }
+
+  .hidden-header h3 {
+    margin-bottom: 0;
+  }
+
+  .resto .ss-container {
+    width: 100%;
+  }
+
+  .imgs {
+    max-width: 80rem;
+    gap: 2.5rem;
+  }
+
+  .imgs img {
+    max-width: 70rem;
+  }
+
+  .end .note {
+    font-size: 2rem;
   }
 }
