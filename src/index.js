@@ -1,14 +1,21 @@
 import './main.css';
 import './banner/banner.js';
 
+// educ
 const educh2 = document.querySelector('.educ h2');
 const educLink = document.querySelector('[href="#educ"]');
 const educSvgClassName = 'move-cap';
 animate(educh2, educSvgClassName, educLink);
 
+// work
+const workh2 = document.querySelector('.work h2');
+const workLink = document.querySelector('[href="#work"]');
+const workSvgClassName = 'move-bag';
+animate(workh2, workSvgClassName, workLink);
+
 // utils below}
 
-function animate(header, svgClassName, clickEle) {
+function animate(header, svgClassName, clickEle = null) {
   const state = {
     anchorStillAnimating: false,
     svgStillAnimating: false
@@ -16,6 +23,8 @@ function animate(header, svgClassName, clickEle) {
 
   const handleHover = () => onHeaderHover(header, svgClassName, state);
   header.addEventListener('mouseenter', handleHover);
+
+  if (!clickEle) return;
   clickEle.addEventListener('click', handleHover);
 }
 

@@ -76,10 +76,10 @@ main {
 }
 
 .move-cap {
-  animation: full-sequence linear 1.6s alternate 2;
+  animation: full-cap-sequence linear 1.6s alternate 2;
 }
 
-@keyframes full-sequence {
+@keyframes full-cap-sequence {
   30% {
     transform: translate(20%, -50%); 
   }
@@ -90,5 +90,19 @@ main {
   60%,
   100% {
     transform: translate(50%, -30%) rotate(-30deg); 
+  }
+}
+
+.move-bag {
+  animation: full-bag-sequence linear .5s;
+}
+
+@keyframes full-bag-sequence {
+  25% {
+    transform: scale(0.8, 1.2);
+  }
+
+  50% {
+    transform: scale(1.2, 0.8);
   }
 }
