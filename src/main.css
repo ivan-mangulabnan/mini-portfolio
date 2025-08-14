@@ -36,7 +36,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #00112280;
 }
 
 @media (max-width: 1300px) {
@@ -103,6 +102,10 @@ footer {
 
   .imgs img {
     max-width: 70rem;
+  }
+
+  footer {
+    background-color: #00112280;
   }
 }
 
@@ -388,5 +391,115 @@ footer {
   .note {
     text-align: center;
     padding: 0 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .banner {
+    padding: 0 1rem;
+  }
+
+  .banner .logo-text {
+    font-size: 2.5rem;
+  }
+  
+  .banner .logo-svg {
+    width: 2rem;
+  }
+
+  .anchors a {
+    min-width: 3rem;
+    min-height: 3rem;
+  }
+
+  .anchors svg {
+    width: 2.3rem;
+  }
+
+  [href="#skills"] svg {
+    width: 1.8rem;
+  }
+
+  [href="#projects"] svg {
+    width: 1.4rem;
+  }
+
+  [href="#projects"] .bot {
+    bottom: 11%;
+    left: 34%;
+  }
+
+  .desc p {
+    padding: 0 1rem;
+  }
+
+  .sections h2 {
+    font-size: 2.3rem;
+  }
+
+  .icon-svg {
+    width: 2.6rem;
+  }
+
+  .educ .degree {
+    font-size: 1.6rem;
+  }
+
+  .sections section p {
+    font-size: 1.4rem;
+  }
+
+  .pup-logo {
+    width: 1.6rem;
+  }
+
+  .bag {
+    top: 15%;
+  }
+
+  .work h3 {
+    font-size: 1.8rem;
+  }
+
+  .work .company {
+    letter-spacing: normal;
+  }
+
+  .skills .content {
+    padding: 0 1rem;
+  }
+
+  .hidden-header h3 {
+    font-size: 1.8rem;
+  }
+
+  .ss-container {
+    padding: 0 1rem;
+  }
+
+  .carousel {
+    padding: 0;
+    box-shadow: 5px 5px 5px rgb(0 0 0 / .5);
+  }
+
+  .details .summary {
+    padding: 0 1rem;
+  }
+
+  .project-links a {
+    font-size: 1.4rem;
+  }
+
+  .notif {
+    max-width: 32rem;
+    gap: 1rem;
+  }
+
+  .info-svg {
+    width: 4rem;
+  }
+
+  .note {
+    font-size: 1.8rem;
   }
 }
