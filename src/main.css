@@ -203,8 +203,16 @@ footer {
 
 @media (max-width: 800px) {
 
+  .banner {
+    padding: 0 2rem;
+  }
+
   .banner .logo-svg {
     width: 2.3rem;
+  }
+
+  nav .anchors {
+    gap: 1rem;
   }
 
   .anchors span {
@@ -359,5 +367,26 @@ footer {
   .contact {
     display: flex;
     justify-content: center;
+  }
+
+  .sections h2 {
+    font-size: 2.5rem;
+  }
+
+  .icon-svg {
+    width: 3rem;
+  }
+
+  .work .content {
+    padding: 2rem 1rem;
+  }
+
+  .ss-container {
+    padding: 0 2rem;
+  }
+
+  .note {
+    text-align: center;
+    padding: 0 1rem;
   }
 }
