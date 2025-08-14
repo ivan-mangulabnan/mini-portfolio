@@ -10,6 +10,10 @@ nav .anchors {
   font-weight: 600;
 }
 
+.anchors svg {
+  display: none;
+}
+
 .anchors a {
   display: block;
   opacity: .8;

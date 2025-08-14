@@ -64,6 +64,10 @@ footer {
     letter-spacing: .3rem;
   }
 
+  .sections {
+    padding: 0;
+  }
+
   .projects li {
     display: flex;
     flex-direction: column;
@@ -107,6 +111,10 @@ footer {
   .main-wrapper {
     width: 100%;
     max-width: 110rem;
+  }
+
+  main {
+    padding: 0;
   }
 
   .banner {
@@ -199,6 +207,47 @@ footer {
     width: 2.3rem;
   }
 
+  .anchors span {
+    display: none;
+  }
+
+  .anchors svg {
+    display: block;
+    width: 3rem;
+  }
+
+  .anchors a {
+    min-height: 4rem;
+    min-width: 4rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  [href="#skills"] svg {
+    width: 2.5rem;
+  }
+
+  .anchors [href="#projects"] {
+    position: relative;
+    justify-content: start;
+  }
+
+  [href="#projects"] svg {
+    width: 2rem;
+    position: absolute;
+  }
+
+  [href="#projects"] .top {
+    top: 17%;
+  }
+
+  [href="#projects"] .bot {
+    bottom: 10%;
+    left: 40%;
+  }
+
   .intro {
     display: flex;
     margin-top: 5rem;
@@ -233,6 +282,7 @@ footer {
     transform: translate(-50%, -50%);
     filter: brightness(0.8) contrast(1.2);
     z-index: 1;
+    will-change: transform;
   }
 
   .small-circ {
